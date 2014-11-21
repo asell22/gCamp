@@ -8,10 +8,14 @@
   <div class="row">
     <div class="col-md-4">
       <%= image_tag 'first_image.jpg', class: "img-responsive"%>
+      <p></p>
+      <p></p>
+
       <div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title">Tasks</h3>
         </div>
+
 
         <div class="panel-body" style="height:100px">
           Grouped by projects and lists. Just the way you like 'em
@@ -21,6 +25,8 @@
     </div>
     <div class="col-md-4">
       <%= image_tag 'second_image.jpg', class: "img-responsive"%>
+      <p></p>
+      <p></p>
       <div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title">Documents</h3>
@@ -37,6 +43,8 @@
     </div>
     <div class="col-md-4">
       <%= image_tag 'third_image.jpg', class: "img-responsive"%>
+      <p></p>
+      <p></p>
       <div class="panel panel-primary">
         <div class="panel-heading">
           <h3 class="panel-title">Titles</h3>
@@ -50,9 +58,18 @@
       </div>
     </div>
   </div>
-</div>
 
-<div class = "container text-left footer">
+
+  <blockquote = "text-center">
+    <% @quotes.each do |array| %>
+    <p> <%=array[1]%> </p>
+    <small><cite><%=array[0]%></cite></small>
+    <p></p>
+    <% end %>
+  </blockquote>
+
+  <div class = "text-left footer">
+
 
     <hr>
 
