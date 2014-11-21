@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>gCamp</h1>
+    <p>Your life organized.</p>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-4">
+      <%= image_tag 'first_image.jpg', class: "img-responsive"%>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Tasks</h3>
+        </div>
+
+        <div class="panel-body" style="height:100px">
+          Grouped by projects and lists. Just the way you like 'em
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-4">
+      <%= image_tag 'second_image.jpg', class: "img-responsive"%>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Documents</h3>
+        </div>
+
+        <div class="panel-body" style="height:100px">
+          <ul>
+            <li>Upload</li>
+            <li>Comment</li>
+            <li>Revise</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <%= image_tag 'third_image.jpg', class: "img-responsive"%>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Titles</h3>
+        </div>
+        <div class="panel-body" style="height:100px">
+          <ul>
+            <li>Comments on tasks and documents</li>
+            <li>Get email notifications</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class = "container text-left footer">
+
+    <hr>
+
+    <u><%= link_to "About", about_path %></u>
+    <u><%= link_to "Terms", terms_path %></u>
+  </div>
+</div>
