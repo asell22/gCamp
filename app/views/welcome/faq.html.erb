@@ -1,42 +1,21 @@
 <div class = "container">
   <h1><big>Frequently Asked Questions</big></h1>
-  <p></p>
-  <p></p>
-  <h4>What is gCamp?</h4>
-  <p></p>
-  <p></p>
-  <p>gCamp is an awesome tool that is going to change your life. gCamp is your one stop shop to organize all your
-  tasks and documents. You'll also be able to track comments that you and others make. gCamp may eventually replace
-  all need for paper and pens in the entire world. Well, maybe not, but it's going to be pretty cool.
-  </p>
-  <p></p>
-  <p></p>
-  <h4>How do I join gCamp?</h4>
-  <p></p>
-  <p></p>
-  <p>Right now, gCamp is still in development.So there is not a sign-up page open to the public, yet! Your best option
-  is to become super best friends with a developer. They can be found hanging around gSchool during the day and at the
-  hottest clubs at night.
-  </p>
-  <p></p>
-  <p></p>
-  <h4>When will gCamp be finished?</h4>
-  <p></p>
-  <p></p>
-  <p>gCamp is a work in progress. That being said, it should be fully functional by December 2014. Functional, but our
-  developers are going to continue to improve the sight for the foreseeable future. Check in daily for new features
-  and new functionality. It's going to blow your mind. Organization is only (well, will only) be a click away.
-  Amazing!
-  </p>
+
+  <% @q_and_as.each do |obj| %>
+  <br>
+  <h4> <%=obj.question%> </h4>
+  <br>
+  <p><%=obj.answer%></p>
+  <br>
+  <% end %>
 
   <div class = "text-left footer">
+
+
     <hr>
 
     <u><%= link_to "About", about_path %></u>
-    |
     <u><%= link_to "Terms", terms_path %></u>
-    |
     <u><%= link_to "FAQ", faq_path %></u>
-
   </div>
 </div>
