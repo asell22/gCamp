@@ -1,4 +1,4 @@
-<div class = "container">
+
   <h1><big>Frequently Asked Questions</big></h1>
 
   <% @q_and_as.each do |obj| %>
@@ -8,14 +8,3 @@
   <p><%=obj.answer%></p>
   <br>
   <% end %>
-
-  <div class = "text-left footer">
-
-
-    <hr>
-
-    <u><%= link_to "About", about_path %></u>
-    <u><%= link_to "Terms", terms_path %></u>
-    <u><%= link_to "FAQ", faq_path %></u>
-  </div>
-</div>
