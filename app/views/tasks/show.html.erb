@@ -3,10 +3,13 @@
     <p id="notice" ><%= notice %></p>
   </div>
 <% end %>
-
+<%= @task.inspect %>
 <p>
   <strong>Description:</strong>
   <%= @task.description %>
+  <p> </p>
+  <strong>Completed</strong>
+  <%= @task.completed %>
 </p>
 
 <%= link_to 'Edit', edit_task_path(@task) %> |
