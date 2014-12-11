@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(user_params)
-    redirect_to users_path
+    redirect_to users_path, notice: "User was successfully created!"
   end
 
   private
