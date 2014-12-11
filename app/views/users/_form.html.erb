@@ -43,4 +43,16 @@
     </div>
   </div>
 
-<% end %>
+  <% if params[:action] == "edit" %>
+  <div class = "actions">
+    <div class="col-sm-offset-2 col-sm-4">
+      <div class = "form-group well well-sm">
+        <div class="col-sm-offset-3 col-sm-9">
+          <%= link_to 'Delete User', user_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-danger"%>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+
+  <% end %>
