@@ -8,8 +8,12 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.create(project_params)
-    redirect_to project_path(@project), notice: "Project was successfully created!"
+    @project = Project.new(project_params)
+    if @project.save
+      redirect_to project_path(@project), notice: "Project was successfully created!"
+    else
+      render :new
+    end   
   end
 
   def show
@@ -40,5 +44,5 @@ def project_params
   params.require(:project).permit(
   :name
   )
-end
+  end
 end

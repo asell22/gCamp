@@ -1,8 +1,10 @@
 <div class="page-header">
+  <div class = "row">
   <div class = "pull-right">
     <%= link_to "All Tasks", tasks_path %>
     | <%= link_to "Incomplete Tasks", tasks_path({completed: false})  %>
     <%= link_to "New Task", new_task_path, class: "btn btn-info" %></button>
+  </div>
   </div>
   <h1>Tasks</h1>
 </div>
@@ -14,8 +16,6 @@
       <th>Description</th>
       <th>Complete</th>
       <th>Due</th>
-      <th></th>
-      <th></th>
       <th></th>
       <th colspan="5"></th>
     </tr>
