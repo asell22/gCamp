@@ -20,7 +20,7 @@
       <th>Name</th>
 
       <th>Email</th>
-      
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -31,7 +31,7 @@
       <td><%= link_to "#{user.first_name} #{user.last_name}", user_path(user) %></td>
       <td><%= mail_to user.email %></td>
       <td>
-        <%= link_to 'Edit', edit_user_path(user), class: "pull-right" %>
+        <%= link_to 'Edit', edit_user_path(user), class: "pull-right",  id: "edit-user-action" %>
       </td>
     </tr>
 
